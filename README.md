@@ -15,7 +15,7 @@ Case “Flanders”: thisIsNotPossible(); break;
 ```
 What if I can show you a replacement for if-else conditional branching that can handle **anything**? Though, you have to code that “anything” into objects, using a blend of template &amp; chain-of-responsibility design pattern...
 
-![image](https://github.com/josephedwardchang/If-Else-Replacement-Pattern/assets/21256796/c2660b5e-38c6-480a-bf53-bb42b4bbb360)
+![image](https://github.com/josephedwardchang/If-Else-Replacement-Pattern/assets/21256796/18700964-98a6-44fe-a34d-13d44085c451)
 Screenshot above is UML and Sequence diagram of the topic. But it doesn’t show the true subtle inner workings as codes does, it was meant to be an overview.
 
 #### Details of the UML diagram
