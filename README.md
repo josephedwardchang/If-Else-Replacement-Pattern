@@ -45,5 +45,3 @@ This abstract class can be changed by providing return value to indicate success
 
 This pattern solves the problem when 1 handler is all that is needed to be called upon meaning, the other handlers in the chain would not execute once a handler gets called and handled it. Well, what if we want multiple handlers on the chain to have a go? Now, that’s a question for inquisitive minds and advanced devs, eh? Good luck, I leave it up to those curious folks. _FYI, I know the solution and it takes only 1 keyword to be removed..._
 
-## Output of code sample
-![image](https://github.com/josephedwardchang/If-Else-Replacement-Pattern/assets/21256796/4d25dfec-3580-419e-a52d-933f727301c7)
