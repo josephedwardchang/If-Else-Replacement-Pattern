@@ -28,9 +28,9 @@ Each Objxx class implements and overrides 2 abstract methods:
 #### Details of the MainObj class
 Did I whet your appetite to see the codes yet? Or did you just go straight into diving through the codes? Go take a look while reading the info below:
 
-- Inside InitializeChain() method, you have 2 steps: create the handler objects (Obj1..4) and 2) set each of their successors one after the other. Warning though, not to make the succession in a circular loop and not make any handler be skipped, otherwise that’s a bug right there! 
+- Inside InitializeChain() method, you have 2 steps: 1) create the handler objects (Obj1..4) and 2) set each of their successors one after the other. Warning though, not to make the succession in a circular loop and not make any handler be skipped, otherwise that’s a bug right there! 
 
-- Inside Execute(Object param) method, it calls the actual method “HandleRequest()” that has the logic to determine if it can call on the “HandleIt()” method for all the objects in the chain. The way it does this is: to get the result of the CanHandle() for each of the Objects and if it is true and it executes the HandleIt() of that Object. If it throws error or CanHandle() returns false, it moves to the next object and if it done, it returns all the way to MainObj.Execute() finishing the method.
+- Inside Execute(Object param) method, it calls the actual method “HandleRequest()” that has the logic to determine if it can call on the “HandleIt()” method for all the objects in the chain. The way it does this is: to get the result of the CanHandle() for each of the Objects and if it is true then it executes the HandleIt() of that Object. If it throws error or CanHandle() returns false, it moves to the next object and if it's done, it returns all the way to MainObj.Execute() finishing the method.
 
 - Inside each of the defined Handler Objects (see MsgHandlers.cs file), you would see they defined their own CanHandle() and HandleIt() methods according to their singular purpose (parse json or parse GPS, etc). 
 
